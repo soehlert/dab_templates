@@ -1,5 +1,5 @@
-# Customized LXC templates for Proxmox
-Using the Proxmox provided tool (Debian Appliance Builder - dab), this repo helps to create an LXC template for Proxmox. Currently, it helps build a Ubuntu 18.04 template ready for ansible by allowing ssh connections to root off the bat and installing python2.
+# Creating a Custom LXC Template for Proxmox
+Using the Proxmox provided tool (Debian Appliance Builder - dab), this repo helps to create an LXC template for Proxmox. Currently, it helps build a Ubuntu 18.04 template ready for Ansible by allowing ssh connections to root off the bat and installing python2.
 
 ### Install dab
 In order to create this template, you need dab installed. Note: dab is only provided by Proxmox, not default repos. 
