@@ -2,6 +2,7 @@ BASEDIR:=$(shell dab basedir)
 
 all: info/init_ok
 	dab bootstrap
+	cp ./files/ssh/id_rsa.pub ${BASEDIR}/root/.ssh/authorized_keys
 	dab install python2.7 python-pip
 	echo BASEDIR: ${BASEDIR}
 	echo "en_US.UTF-8" > ${BASEDIR}/etc/locale
