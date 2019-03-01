@@ -6,6 +6,11 @@ In order to create this template, you need dab installed. Note: dab is only prov
 
     apt update && apt install dab git make
 
+#### NOTE: The dab package in the repo may be too old to use for Bionic or later, in which case you'll need to install dab from git
+
+    git clone git://git.proxmox.com/git/dab.git
+    dpkg -i dab/dab_*.deb
+
 ### Clone repository
 
 Once dab is installed just clone the git repository to get the required files.
