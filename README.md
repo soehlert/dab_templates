@@ -22,10 +22,12 @@ Once dab is installed just clone the git repository to get the required files.
 
 Feel free to customize the Makefile and dab.conf file if you want to add anything else. Currently this only:
 
-* Allows SSH Root Login via password (probably not a good idea if your containers will be accesible via internet. Mine are not and also this gets shut off on first Ansible run.)
+* Allows SSH Root Login via pubkey (probably not a good idea if your containers will be accesible via internet. Mine are not and also this gets shut off on first Ansible run.)
 * Installs python2.7 so Ansible can run on first boot.
 * localtime is set to America/Chicago
 * locale is set to en_US.UTF-8
+
+You'll want to change the ssh pub key in `./files/ssh/`
 
 If you require more information about the dab makefile please visit the Proxmox [dab wiki](https://pve.proxmox.com/wiki/Debian_Appliance_Builder), ask on the Proxmox [forum](https://forum.proxmox.com/) and check the dab man pages.
 
